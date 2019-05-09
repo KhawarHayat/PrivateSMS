@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <title>ChatApp</title>
+    <script>
+    $(document).ready(function(){
+    //    $('#login').click(() => {
+    //       axios.post('/login',{
+    //           username : $('#username').val(),
+    //           password : $('#password').val()     
+    //       }).then((res) => {
+    //           if(res.data == 'ok'){
+                  
+    //           }
+    //       })
+    //    }) 
+    })
+    </script>
+</head>
+<body>
+    <div class="ui center aligned grid" style="width : 100%; height : 10%;">
+        <div class="green row">
+            <p class="center aligned left floated two wide column">Home</p>
+            <p class="center aligned right floated two wide column">Groups</p>
+        </div>
+    </div>
+    <br>
+    <div class="ui container" style="width : 100%;">
+    <div class="ui placeholder segment" >
+        <div class="ui two column very relaxed stackable grid">
+          <div class="column" >
+            <form action="/login" method="post">
+                <div class="ui big form" >
+                        <div class="field">
+                          <label>Username</label>
+                          <div class="ui left icon input">
+                            <input type="text" placeholder="Username" name="username" id="username">
+                            <i class="user icon"></i>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <label>Password</label>
+                          <div class="ui left icon input">
+                            <input type="password" name="password" id="password">
+                            <i class="lock icon"></i>
+                          </div>
+                        </div>
+                        <button type="submit" class="ui blue submit button">Login</button>
+                      </div>
+                    </div>
+            </form>
+            
+          <div class="middle aligned column">
+            <div class="ui big button" id = "signup">
+              <i class="signup icon"></i>
+              <a href="/signup"> Sign Up </a> 
+            </div>
+          </div>
+        </div>
+        <div class="ui vertical divider">
+          Or
+        </div>
+      </div>
+    </div>
+</body>
+</html>
